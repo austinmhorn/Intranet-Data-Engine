@@ -1,0 +1,12 @@
+# json data
+json/
+
+# output files
+data/
+
+# log files
+logs/
+
+# other
+__pycache__/
+.DS_Store
