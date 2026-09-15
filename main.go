@@ -78,7 +78,8 @@ func main() {
 		"Title",
 		"Start Date",
 		"End Date",
-		"Manager",
+		"Supervisor",
+		"Supervisor Employee ID",
 	}
 	writer.Write(headers)
 
@@ -106,7 +107,8 @@ func main() {
 		titleStr := notionapi.GetRollupFormulaString(props, "Title (As Text)")
 		startDateStr := notionapi.GetDateValue(props, "Hire Date")
 		endDateStr := notionapi.GetDateValue(props, "Term Date")
-		regionalManagerStr := notionapi.GetFormulaTextValue(props, "Regional Manager (As Text)")
+		supervisorStr := notionapi.GetRollupFormulaString(props, "Supervisor (As Text)")
+		supervisorEmployeeIDStr := notionapi.GetRollupPlainText(props, "Supervisor Employee ID")
 
 		// Configure 'Active' column
 		if activeStr == "Active" {
@@ -137,7 +139,8 @@ func main() {
 			titleStr,
 			startDateStr,
 			endDateStr,
-			regionalManagerStr,
+			supervisorStr,
+			supervisorEmployeeIDStr[0],
 		}
 		writer.Write(row)
 

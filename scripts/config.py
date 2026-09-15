@@ -17,7 +17,7 @@ NOTION_DATA_PROD_FILE = DATA_DIR / "notion_data_prod.csv"
 NOTION_DATA_SOFT_FILE = DATA_DIR / "notion_data_soft.csv"
 NOTION_DATA_TEST_FILE = DATA_DIR / "notion_data_test.csv"
 
-SCIM_SCRIPT = SCRIPT_DIR / "CSV-2-SCIM_Intranet.py"
+SCIM_SCRIPT = SCRIPT_DIR / "CSV-2-SCIM_Intranet_v2.py"
 PROD_CONFIG_SCRIPT = SCRIPT_DIR / "filter_for_prod.py"
 SOFT_CONFIG_SCRIPT = SCRIPT_DIR / "filter_for_soft.py"
 TEST_CONFIG_SCRIPT = SCRIPT_DIR / "filter_for_test.py"
