@@ -111,7 +111,7 @@ func main() {
 		supervisorEmployeeIDStr := notionapi.GetRollupPlainText(props, "Supervisor Employee ID")
 
 		// Configure 'Active' column
-		if activeStr == "Active" {
+		if activeStr == "Active" || activeStr == "Onboarded" {
 			activeStr = "TRUE"
 		} else {
 			activeStr = "FALSE"
